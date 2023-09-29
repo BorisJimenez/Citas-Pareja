@@ -1,0 +1,17 @@
+.banner {
+    padding: 2rem;
+    background-color: var(--bg-200);
+}
+
+.banner h2 {
+    font-size: 1.2rem;
+    color: var(--primary-100);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.banner p {
+    font-size: 1rem;
+    text-align: justify;
+    color: var(--primary-200);
+}
