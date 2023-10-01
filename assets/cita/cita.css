@@ -1,0 +1,60 @@
+.cita-actual {
+    padding: 2rem;
+    background-color: var(--bg-200);
+}
+
+.cita-actual h2 {
+    font-size: 1.2rem;
+    color: var(--primary-100);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cita-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.cita-form div {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-100);
+    font-size: 1.2rem;
+}
+
+.cita-boton {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    background-color: var(--primary-300);
+    color: var(--accent-200);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid var(--accent-200);
+    box-shadow: 4px 4px 8px;
+}
+
+.contador div {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contador h3 {
+    color: var(--accent-200);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem
+}
+
+.contador span {
+    font-size: 3rem;
+    color: var(--primary-100);
+    text-align: center;
+    border: 2px solid var(--accent-200);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 20%;
+    align-self: center;
+}
