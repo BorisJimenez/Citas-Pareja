@@ -35,6 +35,13 @@ const citaAleatoria = citas[indiceAleatorio];
 document.querySelector(".cita-actual h2").textContent = citaAleatoria;
 
 
+// Función para actualizar la cita actual
+function actualizarCitaActual() {
+    const indiceAleatorio = Math.floor(Math.random() * citas.length);
+    const nuevaCita = citas[indiceAleatorio];
+    document.querySelector("#citaActual").textContent = nuevaCita;
+}
+
 // Declaramos las variables
 let contadorCumplida = 0;
 let contadorNoCumplida = 0;
@@ -70,4 +77,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
     // Actualizamos el contador
     document.querySelector(".contador .contador-cumplida").textContent = contadorCumplida;
     document.querySelector(".contador .contador-noCumplida").textContent = contadorNoCumplida;
+
+    // Después de actualizar el contador, llamamos a la función para cambiar la cita actual
+    actualizarCitaActual();
 });

@@ -22,7 +22,7 @@
             <p>Las relaciones de pareja requieren de atención y dedicación para mantenerse fuertes y saludables. Para ayudarte se generará una cita cada semana, cuando la completes, deberás marcar la cita como cumplida y podras ver cuantas citas cumpliste y cuantas no.</p>
         </section>
         <section class="cita-actual">
-            <h2>{{ citaAleatoria }}</h2>
+            <h2 id="citaActual">{{ citaAleatoria }}</h2>
             <form class="cita-form">
                 <div>
                     <label for="">Cita cumplida</label>
@@ -36,11 +36,11 @@
                 <h2>Contador de Citas</h2>
                 <div>
                     <h3>Citas Realizadas</h3>
-                    <span class="contador-cumplida">Citas cumplidas: {{ contadorCumplida }}</span>
+                    <span class="contador-cumplida">0</span>
                 </div>
                 <div>
                     <h3>Citas No Realizadas</h3>
-                    <span class="contador-noCumplida">Citas no cumplidas: {{ contadorNoCumplida }}</span>
+                    <span class="contador-noCumplida">0</span>
                 </div>
                 
             </div>
