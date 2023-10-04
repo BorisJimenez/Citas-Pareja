@@ -58,3 +58,13 @@
     width: 20%;
     align-self: center;
 }
+
+.contador{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-cita{
+    width: 5rem;
+    align-self: center;
+}

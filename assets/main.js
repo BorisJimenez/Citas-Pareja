@@ -80,4 +80,37 @@ document.querySelector("form").addEventListener("submit", (e) => {
 
     // Después de actualizar el contador, llamamos a la función para cambiar la cita actual
     actualizarCitaActual();
+
+    const cumplida = parseInt(document.querySelector('#cumplida').textContent);
+    const noCumplida = parseInt(document.querySelector('#noCumplida').textContent);
+
+    // Obtenemos el elemento con la clase "señal"
+    const senal = document.querySelector(".señal");
+
+    // Creamos un elemento de imagen
+    const imagen = document.createElement('img');
+
+    // Definimos la ruta de la imagen según la comparación de citas cumplidas y no cumplidas
+    let imagenSrc = '';
+    if (cumplida > noCumplida) {
+        imagenSrc = 'assets/imagens/corazon-lleno.png'; // Ruta de la imagen feliz
+    } else if (cumplida < noCumplida) {
+        imagenSrc = 'assets/imagens/corazon-roto.png'; // Ruta de la imagen triste
+    } else {
+        imagenSrc = 'assets/imagens/corazon-vacio.png'; // Ruta de la imagen neutral
+    }
+
+    // Asignamos la ruta de la imagen al atributo src
+    imagen.src = imagenSrc;
+
+     // Agregamos una clase a la imagen
+     imagen.classList.add('imagen-cita');
+
+    // Agregamos la imagen como hijo del elemento con la clase "señal"
+    senal.innerHTML = ''; // Limpiamos el contenido existente
+    senal.appendChild(imagen);
 });
+
+
+
+
