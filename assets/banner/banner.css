@@ -15,3 +15,13 @@
     text-align: justify;
     color: var(--primary-200);
 }
+
+@media screen and (min-width: 768px) {
+    .banner h2 {
+        font-size: 1.5rem;
+    }
+    
+    .banner p {
+        font-size: 1.3rem;
+    }
+}

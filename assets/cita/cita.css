@@ -68,3 +68,23 @@
     width: 5rem;
     align-self: center;
 }
+
+@media screen and (min-width: 768px) {
+    .cita-actual h2 {
+        font-size: 1.5rem;
+    }
+
+    .cita-form div {
+        font-size: 1.3rem;
+    }
+
+    .cita-boton {
+        width: 40%;
+        align-self: center;
+        font-size: 1.5rem;
+    }
+
+    .contador h3 {
+        font-size: 1.3rem;
+    }
+}
